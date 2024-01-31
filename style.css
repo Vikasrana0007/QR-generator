@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #262a2f;
+}
+
+.container {
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.container p {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.container input {
+    width: 100%;
+    height: 40px; /* Reduced the height */
+    border: 2px solid #494eea;
+    outline: 0;
+    padding: 10px; /* Reduced the padding */
+    margin: 20px 0 10px; /* Adjusted the margins */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* Added transition effect */
+}
+
+.container input:focus {
+    border-color: #5e6cff; /* Change border color on focus */
+}
+
+.container button {
+    width: 100%;
+    height: 40px;
+    background-color: #494eea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.container button:hover {
+    background-color: #5e6cff; /* Change background color on hover */
+}
+
+#imgbox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+#imgbox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgbox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-2px);
+    }
+    50%{
+        transform: translate(0);
+    }
+    75%{
+        transform: translate(2px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+       
+    }
+
+    .container input {
+        height: 30px;
+        padding: 8px;
+        margin: 15px 0 8px;
+    }
+
+    .container button {
+        height: 35px;
+    }
+    
+}
+
+.navbar {
+    /* background-color: whitesmoke; */
+    overflow: hidden;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+
